@@ -16,6 +16,7 @@ function App() {
     <>
     <Router>
       <Navbar />
+      <Home/>
       <div className="container mx-auto p-6">
         <Routes>
           <Route path="/" element={<Home />} />
