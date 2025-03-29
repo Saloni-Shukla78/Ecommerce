@@ -7,4 +7,8 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
     react()],
+    base: "/Ecommerce/",  // 👈 Replace with your actual repo name
+    build: {
+    outDir: "dist",
+  },
 })
