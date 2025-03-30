@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Users from "./components/Users";
@@ -14,7 +15,7 @@ function App() {
 
    return (
     <>
-    <Router>
+    {/* <Router> */}
       <Navbar />
       <div className="container mx-auto p-6">
         <Routes>
@@ -28,7 +29,7 @@ function App() {
           <Route path="/edit-product/:id" element={<EditProduct />} />
         </Routes>
       </div>
-    </Router>
+    {/* </Router> */}
     </>
   )
 }
